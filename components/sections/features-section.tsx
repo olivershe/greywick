@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 
-function GovernanceIndicator() {
+function DeploymentIndicator() {
   const [step, setStep] = useState(0)
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function GovernanceIndicator() {
     return () => clearInterval(interval)
   }, [])
 
-  const steps = ["Assess", "Implement", "Monitor"]
+  const steps = ["Design", "Build", "Deploy"]
 
   return (
     <div className="flex flex-col items-center justify-center h-full gap-3">
@@ -40,7 +40,7 @@ function GovernanceIndicator() {
   )
 }
 
-function FrameworkAnimation() {
+function ArchitectureAnimation() {
   const [active, setActive] = useState(0)
 
   useEffect(() => {
@@ -50,12 +50,12 @@ function FrameworkAnimation() {
     return () => clearInterval(interval)
   }, [])
 
-  const frameworks = ["ISO 42001", "NIST AI RMF", "COSO ERM", "EU AI Act"]
+  const architectures = ["RAG Pipelines", "Custom Models", "Agent Systems", "Data Integration"]
 
   return (
     <div className="h-full p-4 flex items-center justify-center">
       <div className="flex flex-col gap-2 w-full max-w-[160px]">
-        {frameworks.map((f, i) => (
+        {architectures.map((f, i) => (
           <motion.div
             key={i}
             className={`px-3 py-2 rounded-md text-xs font-medium ${i === active
@@ -84,7 +84,7 @@ function ROIIndicator() {
   return (
     <div className="flex flex-col items-center justify-center h-full gap-4">
       <span className="text-3xl md:text-4xl font-sans font-medium text-foreground">5x</span>
-      <span className="text-sm text-muted-foreground text-center">Higher ROI with<br />Governance-First AI</span>
+      <span className="text-sm text-muted-foreground text-center">Higher ROI with<br />Precision Engineering</span>
       <div className="w-full max-w-[120px] h-1.5 bg-foreground/10 rounded-full overflow-hidden">
         <motion.div
           className="h-full bg-accent rounded-full"
@@ -107,11 +107,11 @@ export function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          The Greywick Doctrine
+          The Greywick Method
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Materiality Card */}
+          {/* Deployment Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -123,15 +123,15 @@ export function FeaturesSection() {
             data-clickable
           >
             <div className="flex-1">
-              <GovernanceIndicator />
+              <DeploymentIndicator />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Materiality Principle</h3>
-              <p className="text-muted-foreground text-sm mt-1">We only engage in AI that materially impacts your business outcomes.</p>
+              <h3 className="font-serif text-xl text-foreground">End-to-End Deployment</h3>
+              <p className="text-muted-foreground text-sm mt-1">We don&apos;t just advise—we design, build, and deploy production-ready AI systems.</p>
             </div>
           </motion.div>
 
-          {/* Frameworks Card */}
+          {/* Architecture Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -143,11 +143,11 @@ export function FeaturesSection() {
             data-clickable
           >
             <div className="flex-1">
-              <FrameworkAnimation />
+              <ArchitectureAnimation />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Compliance Frameworks</h3>
-              <p className="text-muted-foreground text-sm mt-1">Aligned with global AI governance standards and regulations.</p>
+              <h3 className="font-serif text-xl text-foreground">Custom Architecture</h3>
+              <p className="text-muted-foreground text-sm mt-1">Bespoke RAG pipelines and agent systems engineered for your specific workflows.</p>
             </div>
           </motion.div>
 
@@ -167,7 +167,7 @@ export function FeaturesSection() {
             </div>
             <div className="mt-4">
               <h3 className="font-serif text-xl text-foreground">Measurable ROI</h3>
-              <p className="text-muted-foreground text-sm mt-1">Commercial rigor validated with Private Equity due diligence standards.</p>
+              <p className="text-muted-foreground text-sm mt-1">Mathematically modeled returns before we build. Commercial rigor from day one.</p>
             </div>
           </motion.div>
         </div>

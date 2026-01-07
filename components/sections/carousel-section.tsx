@@ -3,12 +3,12 @@
 import { motion } from "framer-motion"
 
 const services = [
-  "AI Materiality Assessment",
-  "Workflow Optimization Audit",
-  "Corporate AI Governance Training",
-  "Bespoke Model Assurance",
-  "RAG Pipeline Architecture",
-  "Continuous Model Monitoring",
+  "Strategic AI Roadmapping",
+  "Precision Workflow Automation",
+  "Custom RAG Architecture",
+  "Agent System Development",
+  "Executive AI Enablement",
+  "Production Deployment",
 ]
 
 export function CarouselSection() {
@@ -24,7 +24,7 @@ export function CarouselSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Audit-grade AI for the enterprise.
+          Industrial-grade AI for the enterprise.
         </motion.h2>
         <motion.p
           className="text-primary-foreground/70 mt-4 max-w-2xl"
@@ -33,8 +33,8 @@ export function CarouselSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          We don&apos;t just build models; we engineer audit-ready automated workflows
-          that optimize efficiency, ensure governance, and deliver measurable ROI.
+          We engineer high-performance AI workflows with the precision of a financial audit.
+          Systems that function with the reliability of a financial ledger.
         </motion.p>
       </div>
 

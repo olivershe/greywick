@@ -14,9 +14,9 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Greywick – Audit-Grade AI for the Enterprise",
+  title: "Greywick – Industrial-Grade AI for the Enterprise",
   description:
-    "Bridging the gap between AI potential and operational reality with the rigor of a financial audit. Operational AI Assurance & Optimization.",
+    "We engineer high-performance AI workflows with the precision of a financial audit. Production-ready RAG pipelines, custom agent systems, and precision workflow automation.",
   generator: "v0.app",
   icons: {
     icon: [

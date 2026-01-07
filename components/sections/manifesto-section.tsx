@@ -19,9 +19,9 @@ export function ManifestoSection() {
     >
       <div className="max-w-5xl mx-auto relative">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif leading-tight text-center text-foreground/10">
-          Stop chasing AI hype.
+          Stop experimenting.
           <br />
-          Start engineering trust.
+          Start deploying.
         </h2>
 
         {/* Gradient mask reveal text - Using Greywick teal gradient */}
@@ -29,9 +29,9 @@ export function ManifestoSection() {
           className="absolute inset-0 text-4xl md:text-6xl lg:text-7xl font-serif leading-tight text-center bg-gradient-to-r from-[#002B49] via-[#008081] to-[#002B49] bg-clip-text text-transparent"
           style={{ clipPath }}
         >
-          Stop chasing AI hype.
+          Stop experimenting.
           <br />
-          Start engineering trust.
+          Start deploying.
         </motion.h2>
       </div>
     </section>
