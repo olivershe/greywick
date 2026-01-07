@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
+import { AnimatedSwirls } from "@/components/animated-swirls"
 
 const footerLinks = [
   { label: "Services", href: "#" },
@@ -16,6 +17,7 @@ export function FooterSection() {
 
   return (
     <footer className="relative bg-background px-6 py-24 overflow-hidden">
+      <AnimatedSwirls />
       {/* Gradient blob - Greywick colors */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-tr from-[#008081]/30 via-[#2A9D8F]/20 to-[#002B49]/30 opacity-40 blur-3xl rounded-full" />

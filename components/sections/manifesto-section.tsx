@@ -2,6 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
+import { AnimatedSwirls } from "@/components/animated-swirls"
 
 export function ManifestoSection() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -17,6 +18,7 @@ export function ManifestoSection() {
       ref={containerRef}
       className="relative min-h-[80vh] flex items-center justify-center bg-background px-6 py-32"
     >
+      <AnimatedSwirls />
       <div className="max-w-5xl mx-auto relative">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif leading-tight text-center text-foreground/10">
           Stop experimenting.

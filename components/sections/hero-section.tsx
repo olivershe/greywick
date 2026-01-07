@@ -2,6 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
+import { AnimatedSwirls } from "@/components/animated-swirls"
 
 const images = [
   "/precision-tech.png",
@@ -28,6 +29,7 @@ export function HeroSection() {
       ref={containerRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background px-6 py-24"
     >
+      <AnimatedSwirls />
       {/* Stacked images */}
       <div className="relative flex items-center justify-center">
         <motion.div

@@ -59,8 +59,8 @@ function ArchitectureAnimation() {
           <motion.div
             key={i}
             className={`px-3 py-2 rounded-md text-xs font-medium ${i === active
-                ? "bg-accent text-accent-foreground"
-                : "bg-foreground/10 text-foreground/60"
+              ? "bg-accent text-accent-foreground"
+              : "bg-foreground/10 text-foreground/60"
               }`}
             animate={{ scale: i === active ? 1.05 : 1 }}
             transition={{ duration: 0.3 }}
