@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 const footerLinks = [
   { label: "Services", href: "#" },
-  { label: "Approach", href: "#" },
+  { label: "Method", href: "#" },
   { label: "Insights", href: "#" },
   { label: "Contact", href: "#" },
 ]
@@ -25,18 +25,14 @@ export function FooterSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-end">
           {/* Logo and links */}
           <div>
-            <motion.div
-              className="flex items-center gap-4"
+            <motion.h2
+              className="text-4xl md:text-5xl font-serif text-foreground"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <img
-                src="/greywick-logo.png"
-                alt="Greywick"
-                className="h-16 md:h-20 w-auto"
-              />
-            </motion.div>
+              Greywick
+            </motion.h2>
 
             <motion.p
               className="text-muted-foreground mt-6 max-w-sm"
@@ -45,7 +41,7 @@ export function FooterSection() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Bridging the gap between AI potential and operational reality with the rigor of a financial audit.
+              We engineer high-performance AI workflows with the precision of a financial audit.
             </motion.p>
 
             <nav className="flex flex-wrap gap-6 mt-8">
@@ -68,7 +64,7 @@ export function FooterSection() {
 
           {/* Email signup */}
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="text-muted-foreground text-sm mb-4">Subscribe for governance insights and AI strategy updates.</p>
+            <p className="text-muted-foreground text-sm mb-4">Subscribe for engineering insights and AI implementation strategies.</p>
             <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
               <input
                 type="email"

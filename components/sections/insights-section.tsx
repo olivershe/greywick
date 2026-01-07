@@ -8,22 +8,22 @@ import { ArrowRight } from "lucide-react"
 
 const articles = [
   {
-    title: "The Governance Gap: Why AI Projects Fail",
-    category: "Strategy",
+    title: "Building Production-Ready RAG Pipelines",
+    category: "Engineering",
     image: "/architecture.jpg",
   },
   {
-    title: "ISO 42001: The New Standard for AI Management",
-    category: "Compliance",
+    title: "From Prototype to Deployment: The AI Implementation Gap",
+    category: "Strategy",
     image: "/precision-tech.png",
   },
   {
-    title: "Building Audit-Grade RAG Pipelines",
+    title: "Custom Agent Architecture for Enterprise Workflows",
     category: "Technical",
     image: "/executive-signing.png",
   },
   {
-    title: "The CFO's Guide to AI Risk Management",
+    title: "Measuring AI ROI: A Framework for CFOs",
     category: "Leadership",
     image: "/architecture.jpg",
   },

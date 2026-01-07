@@ -5,28 +5,28 @@ import { Check } from "lucide-react"
 
 const services = [
   {
-    name: "AI Materiality Assessment",
+    name: "Strategic AI Roadmap",
     price: "Bespoke",
     period: "",
-    description: "Strategic AI roadmap with financial impact analysis",
+    description: "Identify high-value automation opportunities with modeled ROI",
     features: [
-      "Materiality-ranked use case prioritization",
-      "Risk profile assessment",
-      "ROI projection model",
-      "Executive presentation",
+      "Opportunity identification & prioritization",
+      "Mathematical ROI modeling",
+      "Technical feasibility assessment",
+      "Executive presentation & roadmap",
     ],
   },
   {
-    name: "Workflow Optimization Audit",
+    name: "Precision Workflow Automation",
     price: "Bespoke",
     period: "",
-    description: "Full-cycle implementation with governance",
+    description: "End-to-end implementation of production-ready AI systems",
     features: [
-      "End-to-end process mapping",
-      "Audit-grade RAG pipeline",
-      "Internal control documentation",
-      "Continuous model monitoring",
-      "ISO 42001 alignment",
+      "Custom RAG pipeline architecture",
+      "Agent system development",
+      "Full integration & deployment",
+      "Performance optimization",
+      "Ongoing support & monitoring",
     ],
     popular: true,
   },
@@ -44,7 +44,7 @@ export function PricingSection() {
         >
           <h2 className="text-3xl md:text-5xl font-serif text-foreground">Engagement Models</h2>
           <p className="text-muted-foreground mt-4 max-w-md mx-auto">
-            Tailored solutions for enterprise AI governance and implementation.
+            From strategic roadmapping to full-scale implementation.
           </p>
         </motion.div>
 
@@ -89,7 +89,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/20"
                   }`}
               >
-                Schedule Consultation
+                Start a Conversation
               </button>
             </motion.div>
           ))}
