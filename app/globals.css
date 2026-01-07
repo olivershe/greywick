@@ -4,32 +4,44 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Opus Lilac & Ink Theme */
-  --background: 252 250 253;
-  --foreground: 15 5 24;
-  --surface: 244 241 249;
-  --ink: 15 5 24;
-  --iris: 91 33 182;
-  --lilac: 216 180 254;
-  --lime: 217 249 157;
-  --muted-foreground: 110 102 118;
+  /* Greywick Brand Theme */
+  /* Ledger Grey as background */
+  --background: 244 246 248;
+  /* Deep Trust Navy as foreground */
+  --foreground: 0 43 73;
+  /* Secondary surface color */
+  --surface: 233 237 242;
+  /* Deep Trust Navy ink */
+  --ink: 0 43 73;
+  /* Deep Trust Navy primary */
+  --iris: 0 43 73;
+  /* Algorithmic Teal */
+  --lilac: 0 128 129;
+  /* Signal Electric accent */
+  --lime: 42 157 143;
+  /* Slate grey for muted text */
+  --muted-foreground: 74 85 104;
 
-  --card: 244 241 249;
-  --card-foreground: 15 5 24;
-  --popover: 252 250 253;
-  --popover-foreground: 15 5 24;
-  --primary: 91 33 182;
-  --primary-foreground: 252 250 253;
-  --secondary: 244 241 249;
-  --secondary-foreground: 15 5 24;
-  --muted: 244 241 249;
-  --accent: 216 180 254;
-  --accent-foreground: 15 5 24;
+  --card: 255 255 255;
+  --card-foreground: 0 43 73;
+  --popover: 244 246 248;
+  --popover-foreground: 0 43 73;
+  /* Deep Trust Navy */
+  --primary: 0 43 73;
+  /* Light foreground for primary buttons */
+  --primary-foreground: 244 246 248;
+  --secondary: 233 237 242;
+  --secondary-foreground: 0 43 73;
+  --muted: 233 237 242;
+  /* Algorithmic Teal */
+  --accent: 0 128 129;
+  --accent-foreground: 255 255 255;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: 233 228 240;
-  --input: 233 228 240;
-  --ring: 91 33 182;
+  --border: 214 220 228;
+  --input: 214 220 228;
+  /* Algorithmic Teal for focus ring */
+  --ring: 0 128 129;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -47,25 +59,26 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  /* Dark mode - Deep Trust Navy background */
+  --background: 0 43 73;
+  --foreground: 244 246 248;
+  --card: 0 33 56;
+  --card-foreground: 244 246 248;
+  --popover: 0 43 73;
+  --popover-foreground: 244 246 248;
+  --primary: 0 128 129;
+  --primary-foreground: 244 246 248;
+  --secondary: 0 33 56;
+  --secondary-foreground: 244 246 248;
+  --muted: 0 33 56;
+  --muted-foreground: 156 163 175;
+  --accent: 42 157 143;
+  --accent-foreground: 244 246 248;
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
+  --border: 0 55 92;
+  --input: 0 55 92;
+  --ring: 0 128 129;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -82,8 +95,8 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-serif: "Instrument Serif", "Georgia", serif;
+  --font-sans: "Inter", "Sora", "Geist", sans-serif;
+  --font-serif: "Larken", "Garamond Premier Pro", "Instrument Serif", "Georgia", serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
 
   /* Fixed color mappings to use rgb() format for Tailwind v4 */

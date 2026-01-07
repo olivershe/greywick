@@ -4,9 +4,9 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const images = [
-  "/minimal-architecture-portfolio-with-clean-lines.jpg",
-  "/fashion-photography-editorial-black-and-white.jpg",
-  "/modern-ui-design-portfolio-mockup.jpg",
+  "/precision-tech.png",
+  "/executive-signing.png",
+  "/architecture.jpg",
 ]
 
 export function HeroSection() {
@@ -39,7 +39,7 @@ export function HeroSection() {
         >
           <img
             src={images[0] || "/placeholder.svg"}
-            alt="Portfolio showcase 1"
+            alt="Precision AI Technology"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -53,7 +53,7 @@ export function HeroSection() {
         >
           <img
             src={images[1] || "/placeholder.svg"}
-            alt="Portfolio showcase 2"
+            alt="Executive Decision Making"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -67,7 +67,7 @@ export function HeroSection() {
         >
           <img
             src={images[2] || "/placeholder.svg"}
-            alt="Portfolio showcase 3"
+            alt="Structured Architecture"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -80,7 +80,7 @@ export function HeroSection() {
         transition={{ duration: 1, delay: 0.8 }}
       >
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
-          Your work, <em className="italic">curated</em>.
+          Intelligence, <em className="italic">Governed.</em>
         </h1>
       </motion.div>
 

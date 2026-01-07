@@ -8,24 +8,24 @@ import { ArrowRight } from "lucide-react"
 
 const articles = [
   {
-    title: "The Art of Visual Storytelling",
-    category: "Design",
-    image: "/visual-storytelling-design-article.jpg",
-  },
-  {
-    title: "Building a Personal Brand Online",
+    title: "The Governance Gap: Why AI Projects Fail",
     category: "Strategy",
-    image: "/personal-branding-digital-marketing.jpg",
+    image: "/architecture.jpg",
   },
   {
-    title: "Typography Trends for 2024",
-    category: "Typography",
-    image: "/typography-trends-modern-fonts.jpg",
+    title: "ISO 42001: The New Standard for AI Management",
+    category: "Compliance",
+    image: "/precision-tech.png",
   },
   {
-    title: "Minimalism in Portfolio Design",
-    category: "Inspiration",
-    image: "/placeholder.svg?height=200&width=300",
+    title: "Building Audit-Grade RAG Pipelines",
+    category: "Technical",
+    image: "/executive-signing.png",
+  },
+  {
+    title: "The CFO's Guide to AI Risk Management",
+    category: "Leadership",
+    image: "/architecture.jpg",
   },
 ]
 
@@ -66,11 +66,11 @@ export function InsightsSection() {
             >
               <div className="flex-1">
                 <span className="text-xs text-muted-foreground uppercase tracking-wider">{article.category}</span>
-                <h3 className="font-serif text-xl md:text-2xl text-foreground mt-1 group-hover:text-primary transition-colors">
+                <h3 className="font-serif text-xl md:text-2xl text-foreground mt-1 group-hover:text-accent transition-colors">
                   {article.title}
                 </h3>
               </div>
-              <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+              <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all" />
             </motion.a>
           ))}
         </div>
