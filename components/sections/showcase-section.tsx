@@ -4,9 +4,9 @@ import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const showcaseImages = [
-  "/modern-architecture-building-exterior-minimal.jpg",
-  "/fashion-model-editorial-portrait-dramatic-lighting.jpg",
-  "/interior-design-minimalist-living-room-natural-lig.jpg",
+  "/precision-tech.png",
+  "/executive-signing.png",
+  "/architecture.jpg",
 ]
 
 export function ShowcaseSection() {
@@ -22,6 +22,12 @@ export function ShowcaseSection() {
 
   const yValues = [y1, y2, y3]
 
+  const altTexts = [
+    "Precision AI Technology - Algorithmic precision in every implementation",
+    "Executive Decision Making - Boardroom-ready AI governance",
+    "Structured Architecture - Enterprise-grade frameworks and controls",
+  ]
+
   return (
     <section ref={containerRef} className="bg-background px-6 py-32 overflow-hidden">
       <div className="max-w-6xl mx-auto">
@@ -31,7 +37,7 @@ export function ShowcaseSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Showcase
+          Our Approach
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -52,7 +58,7 @@ export function ShowcaseSection() {
             >
               <motion.img
                 src={src}
-                alt={`Showcase image ${i + 1}`}
+                alt={altTexts[i]}
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
